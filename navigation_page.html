@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revolutionary Innovation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #2e3192, #a566c7);
+            color: white;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #3e027a, #49039e);}
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-section h1 span {
+            color: #a6c8ff;
+        }
+
+        .hero-section p {
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: #ccc;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: linear-gradient(rgb(141, 93, 196), rgb(46, 74, 128));
+            border-radius: 16px;
+            padding: 25px;
+            width: 260px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            display: inline-block;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .blue {
+            color: #4fa3ff;
+        }
+
+        .purple {
+            color: #c486ff;
+        }
+
+        .green {
+            color: #5cffb0;
+        }
+
+        .red {
+            color: #ff6b6b;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: auto;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .blue-btn {
+            background-color: #4fa3ff;
+            color: #000;
+        }
+
+        .blue-btn:hover {
+            background-color: #3080d0;
+        }
+
+        .purple-btn {
+            background-color: #c486ff;
+            color: #000;
+        }
+
+        .purple-btn:hover {
+            background-color: #a361e3;
+        }
+
+        .green-btn {
+            background-color: #5cffb0;
+            color: #000;
+            text-decoration:none;
+        }
+
+        .green-btn:hover {
+            background-color: #34e292;
+        }
+
+        .red-btn {
+            background-color: #ff6b6b;
+            color: #000;
+        }
+
+        .red-btn:hover {
+            background-color: #e34444;
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .stats div strong {
+            display: block;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-section">
+        <h1><span>Revolutionary</span> Innovation</h1>
+        <p>Experience the future of legal document processing with our cutting-edge AI technology and user-centric
+            design.</p>
+
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="icon blue">📘</div>
+                <h3>AI-Powered Simplification</h3>
+                <p>Advanced machine learning algorithms analyze complex legal language and translate it into clear,
+                    understandable terms while preserving legal accuracy.</p>
+
+                <button class="button blue-btn">Learn More</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="icon purple">🌐</div>
+                <h3>Multi-Language Support</h3>
+                <p>Break language barriers with support for 3+ languages including all major world languages for
+                    culturally appropriate translations.</p>
+                <span class="highlight purple">🌍 3+ Languages</span>
+                <button class="button purple-btn">Learn More</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="icon green">🔊</div>
+                <h3>Text-to-Speech Accessibility</h3>
+                <p>Human-sounding voice synthesis with multiple voice options, speed controls, and accessibility
+                    features for inclusive document consumption.</p>
+                <span class="highlight green">✅ WCAG Compliant</span>
+                <a href="my.html" target="_blank" class="button green-btn">Learn More</a>
+
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="icon red">📖</div>
+                <h3>Legal Term Dictionary</h3>
+                <p>Comprehensive legal dictionary with 10,000+ terms, contextual definitions, acronyms, and
+                    pronunciation guides for complete understanding.</p>
+                <span class="highlight red">📚 10K+ Terms</span>
+                <button class="button red-btn">Learn More</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div><strong>1M+</strong><br />Documents Processed</div>
+            <div><strong>99.7%</strong><br />Accuracy Rate</div>
+            <div><strong>50+</strong><br />Languages Supported</div>
+            <div><strong>24/7</strong><br />Support Available</div>
+        </div>
+    </div>
+</body>
+
+</html>
