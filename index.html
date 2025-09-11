@@ -15,7 +15,7 @@
     }
   </style>
  </head>
- <body class="bg-gradient-to-br from-[#1E1E6D] to-[#2A2A8F] min-h-screen text-white">
+ <body class="bg-gradient-to-br from-[#1E1E6D] to-[#2A2A8F] text-white flex flex-col min-h-screen">
   <header class="flex items-center justify-between px-6 py-4 border-b border-[#3B3B7A]">
    <div class="flex items-center space-x-2">
     <div class="bg-[#4B4BCB] rounded-md p-2">
@@ -60,7 +60,7 @@
     </button>
    </form>
   </header>
-  <main class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-10 md:gap-20">
+  <main class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-10 md:gap-20 flex-1">
    <section class="flex-1 max-w-xl">
     <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
      <span class="text-white">
@@ -155,5 +155,22 @@
     </div>
    </section>
   </main>
+  <footer class="bg-[#23235A] border-t border-[#3B3B7A] px-6 py-6 text-[#B0B0D9] text-sm mt-auto">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center space-x-2 mb-2 md:mb-0">
+        <div class="bg-[#4B4BCB] rounded-md p-2">
+          <i class="fas fa-balance-scale text-white text-lg"></i>
+        </div>
+        <span class="font-extrabold text-white text-lg select-none">LegalClarify</span>
+        <span class="hidden md:inline ml-3 text-xs text-[#B0B0D9]">— Demystifying Legal Documents</span>
+      </div>
+      <div class="flex flex-wrap gap-4 items-center">
+        <a href="#" class="hover:text-white transition">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition">Terms of Service</a>
+        <a href="#" class="hover:text-white transition">Contact</a>
+        <span class="block md:inline mt-2 md:mt-0">&copy; 2025 LegalClarify. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
  </body>
 </html>
